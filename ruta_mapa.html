@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_31ef86b1d126b61104eefa8e1be9b111 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_31ef86b1d126b61104eefa8e1be9b111" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_31ef86b1d126b61104eefa8e1be9b111 = L.map(
+                "map_31ef86b1d126b61104eefa8e1be9b111",
+                {
+                    center: [4.60971, -74.081749],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5ae5a274ce4606d4186dc1ab3c9113ff = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            var marker_329f29b39501fc884f29bccedf0616a7 = L.marker(
+                [4.60971, -74.081749],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            var icon_0268881abcf0a5b93c495770a5713f4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_329f29b39501fc884f29bccedf0616a7.setIcon(icon_0268881abcf0a5b93c495770a5713f4a);
+        
+    
+            marker_329f29b39501fc884f29bccedf0616a7.bindTooltip(
+                `<div>
+                     Bogota
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28750937808857d68f972653e589c5bc = L.marker(
+                [5.5354, -73.367592],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_28750937808857d68f972653e589c5bc.bindTooltip(
+                `<div>
+                     Tunja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9add69925679ed71c9854b3cede29732 = L.marker(
+                [5.714777, -72.932911],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_9add69925679ed71c9854b3cede29732.bindTooltip(
+                `<div>
+                     Sogamoso
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a8609e1097c36e04302bd2ddb2f39c4 = L.marker(
+                [5.337752, -72.394731],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_8a8609e1097c36e04302bd2ddb2f39c4.bindTooltip(
+                `<div>
+                     Yopal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2608f46884005cffeb34621627939cee = L.marker(
+                [4.142438, -73.626204],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_2608f46884005cffeb34621627939cee.bindTooltip(
+                `<div>
+                     Villavicencio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8345180e705e0c7964c864e2eb73713d = L.marker(
+                [6.244203, -75.581214],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_8345180e705e0c7964c864e2eb73713d.bindTooltip(
+                `<div>
+                     Medellin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55fddbbfec070b1f0ab6ea77ea282edf = L.marker(
+                [5.010957, -74.377634],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_55fddbbfec070b1f0ab6ea77ea282edf.bindTooltip(
+                `<div>
+                     Villeta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cec798f89ac5bafd0473c77826a089ad = L.marker(
+                [5.067825, -75.517953],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_cec798f89ac5bafd0473c77826a089ad.bindTooltip(
+                `<div>
+                     Manizales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19bf780c9ae4825ec97a8702711177fb = L.marker(
+                [4.808717, -75.690601],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_19bf780c9ae4825ec97a8702711177fb.bindTooltip(
+                `<div>
+                     Pereira
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_674626d616ada4a51a7a99ff2ee5b458 = L.marker(
+                [4.437301, -75.234447],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_674626d616ada4a51a7a99ff2ee5b458.bindTooltip(
+                `<div>
+                     Ibague
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b4ff2dbc5d1c8d3fc51e8c302acc3b4 = L.marker(
+                [2.93602, -75.290469],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_2b4ff2dbc5d1c8d3fc51e8c302acc3b4.bindTooltip(
+                `<div>
+                     Neiva
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d56c2e75dbcf953d09b1bff6878ede7 = L.marker(
+                [3.451647, -76.532051],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_3d56c2e75dbcf953d09b1bff6878ede7.bindTooltip(
+                `<div>
+                     Cali
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f1e8ce1689ac5a4f7d1524f519d1438 = L.marker(
+                [7.119349, -73.122742],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_2f1e8ce1689ac5a4f7d1524f519d1438.bindTooltip(
+                `<div>
+                     Bucaramanga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b885fc65c4e8e32d0229aaaeb61a0f10 = L.marker(
+                [4.09708, -73.244429],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_b885fc65c4e8e32d0229aaaeb61a0f10.bindTooltip(
+                `<div>
+                     Villanueva
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c047d00afffc073ae350eff7d0f2ca66 = L.marker(
+                [4.57959, -74.207425],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_c047d00afffc073ae350eff7d0f2ca66.bindTooltip(
+                `<div>
+                     Soacha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d9a307e543d08d2b67ee3bdbed66fcf = L.marker(
+                [7.166107, -75.990775],
+                {}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            marker_6d9a307e543d08d2b67ee3bdbed66fcf.bindTooltip(
+                `<div>
+                     Ituango
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_01c2909e20e895a944fa5e858e1077f9 = L.polyline(
+                [[4.60971, -74.081749], [4.57959, -74.207425], [4.808717, -75.690601], [6.244203, -75.581214], [3.451647, -76.532051], [2.93602, -75.290469], [4.60971, -74.081749]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            ant_path_4b776fd192ef4886ee7065e7dfa72657 = L.polyline.antPath(
+              [[4.60971, -74.081749], [4.57959, -74.207425], [4.808717, -75.690601], [6.244203, -75.581214], [3.451647, -76.532051], [2.93602, -75.290469], [4.60971, -74.081749]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 800, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            var poly_line_e2b7cc47a272f8bd492d77af0e286186 = L.polyline(
+                [[4.60971, -74.081749], [4.09708, -73.244429], [5.337752, -72.394731], [7.119349, -73.122742], [7.166107, -75.990775], [5.010957, -74.377634], [4.60971, -74.081749]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            ant_path_66e6d39732bfac3a7b6d54ff8d86d856 = L.polyline.antPath(
+              [[4.60971, -74.081749], [4.09708, -73.244429], [5.337752, -72.394731], [7.119349, -73.122742], [7.166107, -75.990775], [5.010957, -74.377634], [4.60971, -74.081749]],
+              {"bubblingMouseEvents": true, "color": "red", "dashArray": [10, 20], "dashOffset": null, "delay": 800, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            var poly_line_82dec3c0258284b5b315b7e80319b04d = L.polyline(
+                [[4.60971, -74.081749], [5.067825, -75.517953], [4.142438, -73.626204], [5.5354, -73.367592], [5.714777, -72.932911], [4.437301, -75.234447], [4.60971, -74.081749]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+    
+            ant_path_a5950820237c585e05ead854d61c2edf = L.polyline.antPath(
+              [[4.60971, -74.081749], [5.067825, -75.517953], [4.142438, -73.626204], [5.5354, -73.367592], [5.714777, -72.932911], [4.437301, -75.234447], [4.60971, -74.081749]],
+              {"bubblingMouseEvents": true, "color": "purple", "dashArray": [10, 20], "dashOffset": null, "delay": 800, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_31ef86b1d126b61104eefa8e1be9b111);
+        
+</script>
+</html>
